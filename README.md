@@ -1,4 +1,4 @@
-# SyahriahManage - Sistem Manajemen Keuangan PondokPesantren Nurul Asna
+# SyahriahManage - Sistem Manajemen Keuangan Pondok Pesantren Nurul Asna
 
 <p align="center">
    <img src="public/assets/images/logo_copy.png" width="300" alt="Asna Logo">
