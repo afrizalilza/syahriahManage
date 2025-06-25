@@ -1,0 +1,271 @@
+:root {
+    --blue-dark: #005086;
+    --blue-medium: #318FB5;
+    --blue-light: #B0CAC7;
+    --light-gray: #f8f9fa;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-gray);
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer, .footer {
+    margin-top: auto;
+}
+
+/* Header Styles */
+.main-header {
+    margin-bottom: 0;
+}
+
+.header-top {
+    font-size: 0.9rem;
+}
+
+.header-main {
+    transition: all 0.3s ease;
+}
+
+.header-main.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.logo-container {
+    transition: all 0.3s ease;
+}
+
+.logo-image {
+    transition: all 0.3s ease;
+}
+
+.sticky .logo-image {
+    height: 50px !important;
+}
+
+.brand-title {
+    transition: all 0.3s ease;
+}
+
+.sticky .brand-title {
+    font-size: 1.2rem !important;
+}
+
+.brand-subtitle {
+    transition: all 0.3s ease;
+}
+
+.sticky .brand-subtitle {
+    font-size: 0.8rem !important;
+}
+
+/* Navigation Styles */
+.navbar {
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-nav .nav-link {
+    padding: 1rem 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.navbar-nav .nav-link.active {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0.5rem;
+}
+
+.dropdown-item {
+    padding: 0.7rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--blue-light);
+    color: var(--blue-dark);
+}
+
+.dropdown-item.active {
+    background-color: var(--blue-medium);
+    color: white;
+}
+
+/* Button Styles */
+.btn-outline-danger {
+    border-width: 2px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-danger:hover {
+    transform: translateY(-1px);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background-color: var(--blue-medium);
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 0.5rem;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.5rem 1rem;
+    }
+    
+    .dropdown-menu {
+        background-color: rgba(255,255,255,0.1);
+        border: none;
+        box-shadow: none;
+    }
+    
+    .dropdown-item {
+        color: white;
+    }
+    
+    .dropdown-item:hover {
+        background-color: rgba(255,255,255,0.2);
+        color: white;
+    }
+}
+
+/* Additional UI Elements */
+.current-time {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.header-actions {
+    font-size: 0.9rem;
+}
+
+/* Page Header Styles */
+.page-header {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.page-header h2 {
+    color: var(--blue-dark);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.page-header .lead {
+    color: var(--blue-medium);
+    font-size: 1rem;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    background-color: var(--blue-medium);
+    color: white;
+    border: none;
+}
+
+/* Table Styles */
+.table th {
+    background-color: var(--blue-medium);
+    color: white;
+}
+
+/* Utility Classes */
+.bg-primary {
+    background-color: var(--blue-medium) !important;
+}
+
+.bg-secondary {
+    background-color: var(--light-gray) !important;
+}
+
+.text-primary {
+    color: var(--blue-dark) !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-nav {
+        margin-left: 0;
+        padding: 1rem 0;
+    }
+    
+    .nav-link {
+        padding: 0.7rem 1rem !important;
+        border-radius: 4px;
+    }
+
+    .nav-link.active::after {
+        display: none;
+    }
+
+    .dropdown-menu {
+        border: none;
+        background-color: rgba(255,255,255,0.05);
+        padding: 0;
+    }
+
+    .dropdown-item {
+        color: rgba(255,255,255,0.8);
+        padding: 0.7rem 2rem;
+    }
+
+    .dropdown-item:hover {
+        background-color: var(--blue-medium);
+        color: white;
+    }
+
+    .logo-container {
+        gap: 0.8rem;
+    }
+
+    .logo-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .brand-text {
+        font-size: 1.1rem;
+    }
+}
