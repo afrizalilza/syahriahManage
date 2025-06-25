@@ -1,7 +1,7 @@
 # SyahriahManage - Sistem Manajemen Keuangan PondokPesantren Nurul Asna
 
 <p align="center">
-    <img src="logo_copy.png" width="300" alt="Asna Logo">
+   <img src="public/assets/images/logo_copy.png" width="300" alt="Asna Logo">
 </p>
 
 <p align="center">
